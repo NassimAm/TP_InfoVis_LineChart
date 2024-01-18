@@ -9,7 +9,7 @@ d3.csv('../data/data.csv').then(function (data) {
 
     // Configuration du graphique
     const margin = { top:50, right: 215, bottom: 50, left: 80 };
-    const width = 1000 - margin.left - margin.right;
+    const width = window.innerWidth - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
     // Créer l'échelle pour l'axe des X (dates)
